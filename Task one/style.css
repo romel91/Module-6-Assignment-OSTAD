@@ -30,12 +30,15 @@ label{
     margin-top: 10px;
     font-weight: bold;
     margin-right: 2px;
+    align-items: left;
+    
 }
 input{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    align-items: center;
 }
 .cancel-btn{
     background-image: linear-gradient(to right, #b31217, #e52d27 );
