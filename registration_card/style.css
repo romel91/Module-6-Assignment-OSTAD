@@ -13,7 +13,7 @@ body{
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 750px;
+    width: 800px;
     align-items: center;
     justify-content: center;
 }
@@ -30,11 +30,13 @@ form{
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
+    width: 100%;
+    margin: auto;
 }
 label{
     margin-bottom: 5px;
     font-weight: bold;
-    width: 115px;
+    width: 154px;
 }
 input{
     padding: 10px;
@@ -42,7 +44,6 @@ input{
     border-radius: 5px;
     margin-bottom: 10px;
     margin-left: 20px;
-    
 }
 .input-groups{
     display: flex;
@@ -51,15 +52,18 @@ input{
     align-items: center;
 }
 .gender-group {
+    margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
     gap: 15px;
-
 }
 .cancel-btn{
     background-image: linear-gradient(to right, rgb(235, 114, 134), rgb(239, 35, 69) );
-    margin: 8px;
     padding: 15px 30px;
     text-align: center;
     font-weight:bolder;
@@ -69,7 +73,6 @@ input{
 }
 .submit-btn{
     background-image: linear-gradient(to right, rgb(235, 134, 235),  rgb(75, 3, 75));
-    margin: 8px;
     padding: 15px 30px;
     text-align: center;
     font-weight:bolder;
