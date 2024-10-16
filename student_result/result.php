@@ -3,14 +3,14 @@ function calculateResult($marks = [50, 60, 70, 80, 90]){
 
     // confirming five subject or less
     if (count($marks) !=5){
-        echo "Please enter five subject marks. \n";
+        echo "Please enter five subject marks. <br>";
         return;
     }
 
     // mark range validation
     foreach ($marks as $mark){
         if ($mark < 0 || $mark > 100){
-            echo "mark range is invalid .\n";
+            echo "mark range is invalid .<br>";
             return;
         }
     }
@@ -18,7 +18,7 @@ function calculateResult($marks = [50, 60, 70, 80, 90]){
     // checking fail
     foreach ($marks as $mark){
         if ($mark < 33){
-            echo "Grade: F\n";
+            echo "Grade: F<br>";
             return;
         }
     }
@@ -59,12 +59,12 @@ function calculateResult($marks = [50, 60, 70, 80, 90]){
     }
 
     // show the grade
-    echo "Grade : $grade \n";
+    echo "Grade : $grade <br>";
 
     // if got F grade do not print total & average logic declare
     if ($grade != "F"){
-        echo "Total Marks : $total \n";
-        echo "Average Marks : $average \n";
+        echo "Total Marks : $total <br>";
+        echo "Average Marks : $average <br>";
 
 }
 }
