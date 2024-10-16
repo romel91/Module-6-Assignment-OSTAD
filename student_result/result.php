@@ -1,5 +1,5 @@
 <?php
-function calculateResult($marks){
+function calculateResult($marks = [50, 60, 70, 80, 90]){
 
     // confirming five subject or less
     if (count($marks) !=5){
@@ -18,7 +18,7 @@ function calculateResult($marks){
     // checking fail
     foreach ($marks as $mark){
         if ($mark < 33){
-            echo "The student has failed. \n";
+            echo "Grade: F\n";
             return;
         }
     }
@@ -28,13 +28,10 @@ function calculateResult($marks){
     foreach ($marks as $mark){
         $total += $mark;
     }
-    // echo "Total Marks : $total \n";
 
-    // calculate averager of 5 subjects
+    // calculate average of 5 subjects
     $average = $total / 5;
-    // echo "Average Marks : $average \n";
     
-
     // checking cases using switch case
     $grade = "";
     switch (true){
@@ -71,8 +68,8 @@ function calculateResult($marks){
 
 }
 }
-
-$marks = [45, 76, 82, 38, 60];
+// set new value for marks:
+$marks = [38,81, 95, 82, 81];
 
 calculateResult($marks);
 
